@@ -1,0 +1,72 @@
+@charset "utf-8";
+body{
+	font-family: "楷体", "宋体", "黑体";
+	max-width: 1030px;
+	margin: auto;
+    background-color: rgba(238,240,244,1.00);
+	
+	
+}
+h1{
+   
+   margin-left:187px;
+   font-size:35px;
+   color:white;
+}
+.yologo {
+	height: 120px;
+	background-image: url(pictures/p2222457107.jpg);
+	background-repeat: repeat-x;
+	
+	background-size: 240px;
+	
+	}
+ul{text-align: center;
+}
+ul li{
+	display: inline;
+	margin-right: 50px;
+	font-weight: bold;
+	font-size: 1.6em;
+	color: rgba(234,208,1,1.00);
+	}
+h2{	font-weight: bold;
+    font-size: 1.6em;
+	clear:left;
+	}
+.yoip{float:left;
+     margin-right:10px;
+     }	
+
+.yoimg{float:left;
+	height: 270px;
+	width: 183px;
+	margin-right:5px;
+}
+p { margin-top:0px;
+   
+	height: 270px;
+	width: 500px;
+	text-align: justify;
+	
+}
+footer{clear:left;}
+h3{text-align:center;
+    }
+.yodl{margin-top:10px;
+}
+span{
+	font-weight: bold;
+	font-size: 1.5em;
+	}
+.yot{font-weight: bold;
+      font-size: 1.0em}
+a{  text-decoration: none;
+	color: rgba(234,208,1,1.00);
+}
+a:hover{
+	color: rgba(209,20,18,1.00);
+	font-size:30px;
+}
+	
+	
