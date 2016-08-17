@@ -1,72 +1,63 @@
-@charset "utf-8";
-body{
-	font-family: "楷体", "宋体", "黑体";
-	max-width: 1030px;
-	margin: auto;
-    background-color: rgba(238,240,244,1.00);
-	
-	
+*{
+	box-sizing: border-box;
 }
-h1{
-   
-   margin-left:187px;
-   font-size:35px;
-   color:white;
-}
-.yologo {
-	height: 120px;
-	background-image: url(pictures/p2222457107.jpg);
-	background-repeat: repeat-x;
-	
-	background-size: 240px;
-	
-	}
-ul{text-align: center;
-}
-ul li{
-	display: inline;
-	margin-right: 50px;
-	font-weight: bold;
-	font-size: 1.6em;
-	color: rgba(234,208,1,1.00);
-	}
-h2{	font-weight: bold;
-    font-size: 1.6em;
-	clear:left;
-	}
-.yoip{float:left;
-     margin-right:10px;
-     }	
 
-.yoimg{float:left;
-	height: 270px;
-	width: 183px;
-	margin-right:5px;
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #262626;
+	color: rgba(255,255,255,.72);
+	font-family: 楷体;
 }
-p { margin-top:0px;
-   
-	height: 270px;
-	width: 500px;
-	text-align: justify;
-	
+
+h1,
+h2,
+nav{
+	color: #ffcc66;
 }
-footer{clear:left;}
-h3{text-align:center;
-    }
-.yodl{margin-top:10px;
+
+nav{
+	font-size: 1.6em;
 }
-span{
+
+.container {
+	max-width: 960px;
+}
+
+label {
+	position: absolute;
+	right: 22px;
+	top: 28px;
+}
+
+#search-input {
+	width: 200px;
+    color: black;
+    margin-top: 24px;
+}
+
+.yoFont {
+	font-weight: bold;
+    font-size: 1.0em;
+}
+
+span {
 	font-weight: bold;
 	font-size: 1.5em;
-	}
-.yot{font-weight: bold;
-      font-size: 1.0em}
-a{  text-decoration: none;
-	color: rgba(234,208,1,1.00);
 }
-a:hover{
-	color: rgba(209,20,18,1.00);
-	font-size:30px;
+
+.dropdown button{
+    background-color: #ffcc66;
 }
-	
-	
+
+.modal-body {
+    color: black;
+}
+
+.fa {
+ 	color:black;
+}
+
+.yoIcons {
+    margin-top: 20px;
+}
