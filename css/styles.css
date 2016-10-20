@@ -1,0 +1,578 @@
+@charset "UTF-8";
+/*nav a #3f90af;
+a:hover #7a932e
+#e4008b
+#FFD353
+#dee11e
+#312e1d*/
+
+* {
+	box-sizing: border-box;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: url(../images/html.jpg) repeat 0 0;
+}
+
+body {
+	max-width: 980px;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: #312e1d;
+	background-color: #fff;
+	margin: 10px auto;
+	padding: 10px 10px 0 10px;
+	line-height: 1.2em;
+}
+
+/*-----header-----*/
+
+#header {
+	height: 131px;
+}
+
+header .logo {
+	float: left;
+	width: 207px;
+	height: 131px;
+	padding-bottom: 7px;
+	background: url(../images/logo.png) no-repeat;
+}
+
+#header .header-one {
+	font-size: .9em;
+	height: 131px;
+	min-width: 648px;	
+	float: right;
+	padding: 7px 0 14px;
+}
+
+a {
+	color: #3f90af;
+}
+
+a:hover {
+	color: #7a932e;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul li {
+	list-style: none;
+}
+
+.header-one ul {
+	float: left;	
+}
+
+.header-one ul li {
+	display: inline-block;
+	border-right: 1px solid #6fa9c0;;
+	padding: 0 12px 0 8px;
+	margin: 6px 0;
+}
+
+.header-one ul li:nth-child(3) {
+	border-right: none;
+}
+
+.header-one #search {
+	width: 252px;
+	height: 32px;
+	padding: 7px 5px 5px;
+	color: #7e7550;
+	border: 1px solid #92c100;
+}
+
+.header-one #search:hover {
+	background-color: #ffffe5;
+}
+
+form .search-wrap {
+	float: right;
+	width: 284px;
+	height: 78px;
+	margin-left: 10px;
+}
+
+form .search-trigger {
+	float: right;
+	display: inline-block;
+	background: #92c100;
+	position: relative;
+	width: 32px;
+	height: 32px;
+}
+
+form .search-trigger input {
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	opacity: 0;
+}
+
+form #search-icon {
+	position: absolute;
+	left: 7px;
+	top: 9px;
+	color: #fff;
+}
+
+form #search-icon:hover {
+	color: #7e7450;
+	cursor: pointer;
+}
+
+.hidden {
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	position: absolute;
+}
+
+.header-one #offer {
+	clear: both;
+	float: left;
+	color: #e4008b;
+	font-weight: bold;
+	margin-top: 6px; 
+}
+
+.header-one .basket {
+	width: 306px;
+	height: 32px;
+	float: right;
+}
+
+.basket .basket-empty {
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	float: left;
+}
+
+.basket #basket-icon {
+	display: inline-block;
+	width: 44px;
+	height: 30px;
+	background: url(../images/sprite.png) no-repeat 0 0;
+	float: left;
+	cursor: pointer;
+}
+
+.basket #total {	
+	float: left;
+	margin-top: 6px;
+}
+
+.basket a.checkout {
+	display: inline-block;
+	width: 132px;
+	height: 32px;
+	padding: 6px 22px 7px;	
+	border-radius: 11px;
+	text-transform: uppercase;
+	background-color: #FFD353;
+	color: #312e1d;
+	margin-left: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.17em;
+	text-align: center;
+	text-shadow: 0 2px 3px #fff;
+}
+
+.basket a.checkout:hover {
+	background-color: #eef08e;
+}
+
+.header-nav > ul {
+	position: relative;
+	height: 37px;
+}
+
+.header-nav > ul > li > a {
+	float: left;	
+	padding: 8px 17px;
+	border-top: 1px solid #c4d886;
+	border-bottom: 1px solid #c4d886;
+}
+
+.header-nav #ul-size {
+	font-weight: bold;
+	height: 270px;
+	
+}
+
+.li-one .ul-one li {
+	font-weight: normal;
+	padding: 8px 20px 8px 25px;
+	line-height: 1.1em;
+}
+
+.header-nav #ul-size > li {
+	display: inline-block;
+	position: relative;
+	padding: 8px 60px 8px 10px;
+}
+
+.header-nav .ul-two {
+	display: none;
+	position: absolute;
+	left: 547px;
+	height: 188px;
+	border-left: 1px solid #c4d886;
+	border-right: 1px solid #c4d886;
+	border-bottom: 1px solid #c4d886;
+	background-color: #f4f4f4;
+}
+
+.header-nav .ul-two li {
+	padding: 10px 20px 8px 15px;
+}
+
+.header-nav #ul-size {
+	background-color: #f4f4f4;
+	border-left: 1px solid #c4d886;
+	border-right: 1px solid #c4d886;
+	border-bottom: 1px solid #c4d886;
+}
+
+.header-nav ul li a {
+	text-decoration: none;
+}
+
+.header-nav ul ul {
+	position: absolute;
+	top: 100%;
+	left: -1px;
+	display: none;
+	z-index: 999;
+}
+#empty {
+	clear: both;
+}
+
+.header-nav > ul > li > a:hover {
+	 background-color: #f4f4f4;
+}
+
+.header-nav > ul > li:hover ul{
+	display: block;
+}
+
+/*-----main content-----*/
+section h1 {
+	margin: 26px 0 17px;
+	font-size: 2em;
+	height: 40px;
+}
+
+.section-two {
+	height: 40px;
+	border-bottom: 2px solid #c4d886;
+}
+
+.section-two h3 {
+	padding-top: 5px;
+	font-size: 1.7em;
+	font-weight: bold;
+	float: left;
+	
+}
+
+.section-two a {
+	float: right;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 10px;
+	color: #7e7450;
+	font-size: 1.1em;
+}
+
+.section-two a:hover {
+	color: #c4d886;
+}
+
+.section-two a span {
+	margin-left: 8px;
+	color: #408dac;
+}
+
+.section-two a:hover > span {
+	color: #ff359a;
+}
+
+
+
+.section-two-one {
+	height: 380px;
+}
+
+.section-two-one a {
+	text-decoration: none;
+}
+
+.section-two-one > div {
+	float: left;
+	margin: 7px 30px 3px 30px;
+}
+
+.section-two-one a > div {
+	text-align: center;
+}
+
+.section-two-one > div:nth-child(1) {
+	margin-left: 0;
+}
+
+.section-two-one > div:last-child {
+	margin-right: 0;
+}
+
+.section-two-one div div > div {
+	width: 280px;
+	height: 280px;
+	border: 2px solid #fff;
+	margin-bottom: 5px;
+	margin-top: 8px;
+}
+
+.section-two-one a:hover > div > div {
+	border: 2px solid #ff359a;
+	cursor: pointer;
+}
+
+.section-two-one .one div {
+	background: url(../images/280_heirloom_pink_roses_153499160.jpg);
+}
+
+.section-two-one .two div {
+	background: url(../images/280_irises_121549009.jpg);
+}
+
+.section-two-one .three div {
+	background: url(../images/280_white_red_tulips_160382424.jpg);
+}
+
+.p-one {
+	color: #79922d;
+	font-weight: bold;
+}
+
+.p-two {
+	color: #408dac;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-top: 10px;
+}
+
+
+
+.section-two-two {
+	height: 300px;
+}
+
+.section-two-two a {
+	text-decoration: none;
+}
+
+.section-two-two > div {
+	float: left;
+	margin: 7px 26.5px 3px 26.5px;
+}
+
+.section-two-two a > div {
+	text-align: center;
+}
+
+.section-two-two > div:nth-child(1) {
+	margin-left: 0;
+}
+
+.section-two-two > div:last-child {
+	margin-right: 0;
+}
+
+.section-two-two div div > div {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	margin-bottom: 5px;
+	margin-top: 8px;
+}
+
+.section-two-two a:hover > div > div {
+	border: 2px solid #ff359a;
+	cursor: pointer;
+}
+
+.section-two-two .four div {
+	background: url(../images/200_birthday_163159054.jpg);
+}
+
+.section-two-two .five div {
+	background: url(../images/200_arrangement_94972439.jpg);
+}
+
+.section-two-two .six div {
+	background: url(../images/200_purple_daisy_rose104274224.jpg);
+}
+
+.section-two-two .seven div {
+	background: url(../images/200_arrangement_163066655.jpg);
+}
+
+
+
+.section-two-three {
+	height: 520px;
+}
+
+.section-two-three #eight-one {
+	width: 450px;
+	height: 450px;
+	border: 2px solid #000;
+	margin-bottom: 5px;
+	margin-top: 18px;
+	float: left;
+	position: relative;
+}
+
+.section-two-three .eight-two {
+	width: 450px;
+	height: 200px;
+	border: 2px solid #000;
+	margin-bottom: 32px;
+	margin-top: 18px;
+	float: right;
+	position: relative;
+}
+
+.section-two-three a:hover #eight-one {
+	border: 2px solid #ff359a;
+	cursor: pointer;
+}
+
+.section-two-three a:hover .eight-two {
+	border: 2px solid #ff359a;
+	cursor: pointer;
+}
+
+.section-two-three #eight-one {
+	background: url(../images/450_tulips_daffodils_163271740.jpg);
+}
+
+.section-two-three .nine div {
+	background: url(../images/450_2_maidenhair_fern_166585539.jpg);
+}
+
+.section-two-three .ten div {
+	background: url(../images/450_2_tulip_field_154321412.jpg);
+}
+
+.p-three {
+	position: absolute;
+	top: 13px;
+	text-align: center;
+	color: #79922d;
+	font-weight: bold;
+	font-size: 1.6em;
+	padding: 10px 20px 12px;
+	background-color: rgba(255,255,255,.8);
+}
+
+.p-four {
+	color: #408dac;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 15px;
+	right: 0;
+	padding: 10px 20px 12px;
+	background-color: rgba(255,255,255,.8);
+}
+
+#eight-one div {
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #79922d;
+	background-color: rgba(255,255,255,.8);
+	padding: 10px 20px 12px;
+}
+
+#eight-one div p {
+	line-height: 1.4em;
+}
+
+#eight-one div .p-five {
+	color: #408dac;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-top: 15px;
+}
+
+
+/*-----footer-----*/
+
+footer {
+	height: 200px;
+	border-top: 1px solid #c4d886;
+	padding-top: 15px;
+}
+
+footer div {
+	width: 25%;
+	float: left;
+}
+
+footer #footer-logo {
+	height: 124px;
+	background: url(../images/logo.png) no-repeat right 0;
+}
+
+footer div a {
+	display: block;
+	padding-bottom: 8px; 
+	text-decoration: none;
+	font-size: .9em;
+}
+
+footer div a:hover {
+	text-decoration: underline;
+}
+
+#copy {
+	margin-top: 20px;
+	height: 40px;
+	margin-left: -10px;
+	margin-right: -10px;
+	background-color: #c4d886;
+}
+
+#copy p {
+	text-align: right;
+}
+
+#copy p a {
+	display: block;
+	padding-top: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: .9em;
+}
+
+#copy p a:hover {
+	text-decoration: underline;
+}
+
+
